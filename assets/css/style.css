@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*#region <HEADER> styling*/
+header {
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black /*temporary*/
+}
+
+header nav {
+    margin: 7px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    padding: 10px 40px;
+    font-size: 25px;
+}
+/*#endregion*/
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+
+.about-me h2 {
+    margin: 0 100px 0 0;
+    padding-right: 125px;
+    border-right: solid 3px;
+}
+
+.my-info {
+    flex: 1;
+    margin: 0 20px 0 40px;
+}
