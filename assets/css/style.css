@@ -34,6 +34,9 @@ header nav ul {
 header nav ul li a {
     padding: 10px 40px;
     font-size: 25px;
+    border: solid;
+    border-radius: 15px;
+    margin: 0 20px;
 }
 /*#endregion*/
 
@@ -46,14 +49,10 @@ header nav ul li a {
 
 .about-me h2 {
     margin: 0;
-    padding-right: 175px;
-    /*border-right: solid 3px;*/
-    font-size: 50px;
-}
-
-.border {
-    border-left: solid 3px;
-    padding: 0 0 0 20px;
+    border-right: solid 3px;
+    font-size: 30px;
+    width: 20%;
+    text-align: center;
 }
 
 .my-info {
