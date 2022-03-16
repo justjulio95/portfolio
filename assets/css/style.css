@@ -45,12 +45,22 @@ header nav ul li a {
 }
 
 .about-me h2 {
-    margin: 0 100px 0 0;
-    padding-right: 125px;
-    border-right: solid 3px;
+    margin: 0;
+    padding-right: 175px;
+    /*border-right: solid 3px;*/
+    font-size: 50px;
+}
+
+.border {
+    border-left: solid 3px;
+    padding: 0 0 0 20px;
 }
 
 .my-info {
     flex: 1;
     margin: 0 20px 0 40px;
+}
+
+.my-info p {
+    font-size: 20px;
 }
