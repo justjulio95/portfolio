@@ -63,3 +63,20 @@ header nav ul li a {
 .my-info p {
     font-size: 20px;
 }
+
+.projects {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.work {
+    border: solid 3px;
+    flex: 0 0 40%;
+    margin: 20px;
+}
