@@ -7,6 +7,7 @@
 /*#region <HEADER> styling*/
 header {
     padding: 20px 35px;
+    margin: 20px 0 0 45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,14 +41,14 @@ header nav ul li a {
 }
 /*#endregion*/
 
-.about-me {
+.info-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 100px;
 }
 
-.about-me h2 {
+.section-title {
     margin: 0;
     border-right: solid 3px;
     font-size: 30px;
@@ -79,4 +80,39 @@ header nav ul li a {
     border: solid 3px;
     flex: 0 0 40%;
     margin: 20px;
+}
+
+.big-item {
+    flex-basis: 88%;
+}
+
+.contacts {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.contacts ul li {
+
+}
+
+.contacts ul li a {
+    padding: 10px;
+}
+
+.contacts ul li a img {
+    width: 20%;
+}
+
+.test {
+
 }
