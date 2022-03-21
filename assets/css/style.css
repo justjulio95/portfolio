@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+
 /*#region <HEADER> styling*/
 header {
     padding: 20px 35px;
@@ -11,15 +15,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header a {
-    text-decoration: none;
-    color: black /*temporary*/
 }
 
 header nav {
@@ -38,16 +33,24 @@ header nav ul li a {
     border: solid;
     border-radius: 15px;
     margin: 0 20px;
+    color: black;
+    text-decoration: none;
 }
 /*#endregion*/
 
-.info-container {
+/*#region HERO*/
+.hero {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px 100px;
 }
 
+.hero h1 {
+    margin: 40px auto;
+    font-style: italic;
+}
+/*#endregion */
+
+/*#region General Container Styles*/
 .section-title {
     margin: 0;
     border-right: solid 3px;
@@ -56,15 +59,33 @@ header nav ul li a {
     text-align: center;
 }
 
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+/*#endregion*/
+
+/*#region ABOUT ME*/
 .my-info {
+    display: inline-flex;
     flex: 1;
     margin: 0 20px 0 40px;
 }
 
-.my-info p {
-    font-size: 20px;
+.my-info img {
+    width: 25%;
+    flex: 1;
 }
 
+.my-info p {
+    font-size: 20px;
+    margin: auto 25px;
+}
+/*#endregion*/
+
+/*#region MY WORK*/
 .projects {
     flex: 1;
     display: flex;
@@ -82,9 +103,15 @@ header nav ul li a {
     margin: 20px;
 }
 
+.work header {
+    margin: revert;
+    justify-content: center;
+}
+
 .big-item {
     flex-basis: 88%;
 }
+/*#endregion*/
 
 .contacts {
     flex: 1;
@@ -93,16 +120,13 @@ header nav ul li a {
     justify-content: space-evenly;
 }
 
+/*#region CONTACT ME*/
 .contacts ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
     align-items: center;
-}
-
-.contacts ul li {
-
 }
 
 .contacts ul li a {
@@ -112,7 +136,4 @@ header nav ul li a {
 .contacts ul li a img {
     width: 20%;
 }
-
-.test {
-
-}
+/*#endregion*/
