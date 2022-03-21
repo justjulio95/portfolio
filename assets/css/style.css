@@ -99,8 +99,8 @@ header nav ul li a {
 
 .work {
     border: solid 3px;
-    flex: 0 0 40%;
-    margin: 20px;
+    flex: 0 24%;
+    margin: 20px 25px;
 }
 
 .work header {
@@ -109,9 +109,17 @@ header nav ul li a {
 }
 
 .big-item {
+    border: solid 3px;
     flex-basis: 88%;
 }
+
+.big-item header {
+    margin: revert;
+    justify-content: center;
+}
 /*#endregion*/
+
+/*#region CONTACT ME*/
 
 .contacts {
     flex: 1;
@@ -120,20 +128,87 @@ header nav ul li a {
     justify-content: space-evenly;
 }
 
-/*#region CONTACT ME*/
-.contacts ul {
+.socials {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
+    flex-basis: 100%;
 }
 
-.contacts ul li a {
-    padding: 10px;
-}
-
-.contacts ul li a img {
-    width: 20%;
+.socials a img {
+    width: 40%;
+    margin: 0 80px;
+    position: relative;
+    left: 18px;
 }
 /*#endregion*/
+
+
+/*#region Media Queries*/
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+@media screen and (max-width: 980px) {
+    header {
+        margin: 20px;
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+        position: relative;
+        right: 8px;
+    }
+
+    header nav {
+        margin-top: 15px;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: large;
+    }
+
+    .info-container {
+        display: flex;
+    }
+
+    .section-title {
+        font-size: inherit;
+    }
+
+    .my-info p {
+        font-size: 11px;
+    }
+
+    .work {
+        flex-basis: 26%;
+        margin: 20px 0;
+    }
+
+    .work header {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .contacts {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .socials {
+        display: flex;
+        flex-basis: 100%;
+    }
+    
+    .socials a img {
+        width: 40%;
+        margin: 0 45px;
+        position: relative;
+        left: 18px;
+    }
+}
