@@ -229,10 +229,6 @@ header nav ul li a {
         flex-wrap: wrap;
     }
 
-    header nav ul {
-
-    }
-
     header nav ul li a {
         font-size: small;
         padding: 10px 25px;
@@ -242,19 +238,7 @@ header nav ul li a {
         font-size: small;
     }
 
-    .info-container {
-
-    }
-
-    .my-info {
-
-    }
-
-    .my-info img {
-
-    }
-
     .my-info p {
-        font-size: 10px;
+        font-size: 1.5vw;
     }
 }
